@@ -1,8 +1,7 @@
-package com.github.gdpl2112.cabs.Step2;
+package com.github.gdpl2112.cabs.step2;
 
 import com.github.gdpl2112.cabs.step0.entity.SevenWeather;
 import com.github.gdpl2112.cabs.step1.Iyk0Api;
-import com.github.gdpl2112.cabs.step1.Step1;
 import io.github.kloping.MySpringTool.StarterApplication;
 import io.github.kloping.MySpringTool.annotations.AutoStand;
 import io.github.kloping.MySpringTool.annotations.CommentScan;
