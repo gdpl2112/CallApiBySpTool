@@ -10,7 +10,7 @@ import org.jsoup.nodes.Document;
 /**
  * 进阶教学
  * 当 调用到 https://api.uomg.com/api/rand.avatar?sort=%E7%94%B7&format=json
- * API 时 数据量小 不至于 我们生成一个 API 时
+ * API 时 数据量小 不至于 我们生成一个 实体类 时
  * 编写 {@link Uomg}
  * <p>
  * ```json
