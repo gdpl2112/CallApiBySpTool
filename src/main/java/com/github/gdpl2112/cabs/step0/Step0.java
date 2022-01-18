@@ -11,80 +11,80 @@ import io.github.kloping.json.JsonSJC;
  * 这里用的是 优客
  * https://api.iyk0.com/7rtq/?city=北京
  * 其数据为
- *
- *
+ * <p>
+ * <p>
  * ```json
  * {
- *     "code": 200,
- *     "msg": "获取成功！",
- *     "city": "北京",
- *     "cityid": "101010100",
- *     "update_time": "2022-01-18 09:15:04",
- *     "data": [
- *         {
- *             "date": "2022-01-18",
- *             "wea": "晴",
- *             "wea_img": "qing",
- *             "tem_day": "3",
- *             "tem_night": "-7",
- *             "win": "东北风",
- *             "win_speed": "<3级"
- *         },
- *         {
- *             "date": "2022-01-19",
- *             "wea": "多云",
- *             "wea_img": "yun",
- *             "tem_day": "0",
- *             "tem_night": "-8",
- *             "win": "南风",
- *             "win_speed": "<3级"
- *         },
- *         {
- *             "date": "2022-01-20",
- *             "wea": "多云",
- *             "wea_img": "yun",
- *             "tem_day": "0",
- *             "tem_night": "-7",
- *             "win": "南风",
- *             "win_speed": "<3级"
- *         },
- *         {
- *             "date": "2022-01-21",
- *             "wea": "阴",
- *             "wea_img": "yin",
- *             "tem_day": "0",
- *             "tem_night": "-5",
- *             "win": "北风",
- *             "win_speed": "<3级"
- *         },
- *         {
- *             "date": "2022-01-22",
- *             "wea": "多云",
- *             "wea_img": "yun",
- *             "tem_day": "1",
- *             "tem_night": "-7",
- *             "win": "东北风",
- *             "win_speed": "<3级"
- *         },
- *         {
- *             "date": "2022-01-23",
- *             "wea": "多云转阴",
- *             "wea_img": "yun",
- *             "tem_day": "2",
- *             "tem_night": "-6",
- *             "win": "南风",
- *             "win_speed": "<3级"
- *         },
- *         {
- *             "date": "2022-01-24",
- *             "wea": "多云转晴",
- *             "wea_img": "yun",
- *             "tem_day": "3",
- *             "tem_night": "-6",
- *             "win": "西南风",
- *             "win_speed": "<3级"
- *         }
- *     ]
+ * "code": 200,
+ * "msg": "获取成功！",
+ * "city": "北京",
+ * "cityid": "101010100",
+ * "update_time": "2022-01-18 09:15:04",
+ * "data": [
+ * {
+ * "date": "2022-01-18",
+ * "wea": "晴",
+ * "wea_img": "qing",
+ * "tem_day": "3",
+ * "tem_night": "-7",
+ * "win": "东北风",
+ * "win_speed": "<3级"
+ * },
+ * {
+ * "date": "2022-01-19",
+ * "wea": "多云",
+ * "wea_img": "yun",
+ * "tem_day": "0",
+ * "tem_night": "-8",
+ * "win": "南风",
+ * "win_speed": "<3级"
+ * },
+ * {
+ * "date": "2022-01-20",
+ * "wea": "多云",
+ * "wea_img": "yun",
+ * "tem_day": "0",
+ * "tem_night": "-7",
+ * "win": "南风",
+ * "win_speed": "<3级"
+ * },
+ * {
+ * "date": "2022-01-21",
+ * "wea": "阴",
+ * "wea_img": "yin",
+ * "tem_day": "0",
+ * "tem_night": "-5",
+ * "win": "北风",
+ * "win_speed": "<3级"
+ * },
+ * {
+ * "date": "2022-01-22",
+ * "wea": "多云",
+ * "wea_img": "yun",
+ * "tem_day": "1",
+ * "tem_night": "-7",
+ * "win": "东北风",
+ * "win_speed": "<3级"
+ * },
+ * {
+ * "date": "2022-01-23",
+ * "wea": "多云转阴",
+ * "wea_img": "yun",
+ * "tem_day": "2",
+ * "tem_night": "-6",
+ * "win": "南风",
+ * "win_speed": "<3级"
+ * },
+ * {
+ * "date": "2022-01-24",
+ * "wea": "多云转晴",
+ * "wea_img": "yun",
+ * "tem_day": "3",
+ * "tem_night": "-6",
+ * "win": "西南风",
+ * "win_speed": "<3级"
+ * }
+ * ]
  * }
  * ```
  *
@@ -93,9 +93,9 @@ import io.github.kloping.json.JsonSJC;
  * <p>
  * 利用 io.github.kloping.json.JsonSJC
  * 运行下面 代码 即可生成 {@link SevenWeather}
- *
+ * <p>
  * 当然 也可以用其他的 方法 生成数据实体类
- *
+ * <p>
  * 数据模块实体类
  *
  * @author github-kloping
@@ -175,6 +175,7 @@ public class Step0 {
                 "        }\n" +
                 "    ]\n" +
                 "}");
-        JsonSJC.parse(jsonObject, "./src/main/java/com/github/gdpl2112/cabs/step0/entity", "SevenWeather", "com.github.gdpl2112.cabs.step0.entity");
+        JsonSJC.parse(jsonObject, "./src/main/java/com/github/gdpl2112/cabs/step0/entity",
+                "SevenWeather", "com.github.gdpl2112.cabs.step0.entity");
     }
 }
