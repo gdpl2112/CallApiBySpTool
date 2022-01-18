@@ -6,7 +6,6 @@ import io.github.kloping.MySpringTool.annotations.http.*;
  * @author github kloping
  * @version 1.0
  */
-
 @HttpClient(" https://api.uomg.com/api")
 public interface Uomg {
     /**
