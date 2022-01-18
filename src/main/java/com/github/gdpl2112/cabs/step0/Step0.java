@@ -90,6 +90,8 @@ import io.github.kloping.json.JsonSJC;
  * 利用 io.github.kloping.json.JsonSJC
  * 运行下面 代码 即可生成 {@link SevenWeather}
  *
+ * 当然 也可以用其他的 方法 生成数据实体类
+ *
  * 数据模块实体类
  *
  * @author github-kloping
