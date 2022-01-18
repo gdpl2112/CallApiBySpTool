@@ -12,9 +12,9 @@ import io.github.kloping.MySpringTool.annotations.http.ParamName;
 @HttpClient("https://api.iyk0.com/")
 public interface Iyk0Api {
     /**
-     * 其 内部 将调用
-     * HttpClient 与 GetPath 拼接
-     * 与 参数 ParamName 的 组合get 路径
+     * 其 内部 将调用 <br/>
+     * HttpClient 与 GetPath 拼接  <br/>
+     * 与 参数 ParamName 的 组合get 路径  <br/>
      *
      * @param city
      * @return
